@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> RC Tempratutre Convertor</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="Files/style.css" />
+  </head>
+
+  <body>
+    <header class="nav-bar">
+      <div class="logo">
+        <i class="fa-solid fa-temperature-half"></i>
+        <span>RC Calculator</span>
+      </div>
+      <div class="own">
+        <a class="owner" href="https://rohitcodes1504.netlify.app/" target="_blank">
+          <i class="fa-solid fa-user"></i>
+        </a>
+        <img src="Files/sun.png" alt="" id="icon">
+        </div>
+    </header>
+
+    
+    <div class="container">
+      <div class="temp-box">
+        <h1 class="head">Tempratutre Convertor</h1>
+        <div class="input-box">
+          <input type="number" id="input1" placeholder="Enter temperature" />
+        </div>
+
+        <div class="select-box">
+          <select id="select1">
+            <option value="celsius">Celsius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="kelvin">Kelvin</option>
+          </select>
+          <span class="convert">To</span>
+          <select id="select2">
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="celsius">Celsius</option>
+            <option value="kelvin">Kelvin</option>
+          </select>
+        </div>
+        <div class="output">
+          <p id="outputText"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="Files/script.js"></script>
+  </body>
+</html>
